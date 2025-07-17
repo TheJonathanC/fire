@@ -11,7 +11,13 @@
         margin: 0;
         padding: 0;
         background: #262626;
+        overflow: hidden;
       }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
       #fire {
         color: #de701c;
         margin: 0;
@@ -45,7 +51,7 @@
       let height = 20;
 
       const updateWidth = () => {
-        width = Math.floor(window.innerWidth / 9);
+        width = Math.floor(window.innerWidth / 8);
       };
 
       updateWidth();
